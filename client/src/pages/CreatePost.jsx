@@ -61,7 +61,7 @@ const CreatePost = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          "https://dall-e-ca19.onrender.com0/api/v1/post/",
+          "https://dall-e-ca19.onrender.com/api/v1/post/",
           {
             method: "POST",
             headers: {
@@ -73,7 +73,7 @@ const CreatePost = () => {
 
         await response.json();
         // alert("Success");
-        // navigate("/");
+        navigate("/");
       } catch (err) {
         console.log(err.message);
       } finally {
